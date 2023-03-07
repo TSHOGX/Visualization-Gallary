@@ -1,3 +1,4 @@
+/* line 3, ../sass/styles.scss */
 .masonry-list {
   left: 50%;
   margin: -320px 0 0 -480px;
@@ -5,6 +6,7 @@
   top: 50%;
   width: 960px;
 }
+/* line 9, ../sass/styles.scss */
 .masonry-list li {
   float: left;
   height: 320px;
@@ -12,12 +14,14 @@
   padding: 0 1px 1px 0;
   width: 320px;
 }
+/* line 17, ../sass/styles.scss */
 .masonry-list li:focus a::after, .masonry-list li:hover a::after {
   opacity: 1;
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+/* line 21, ../sass/styles.scss */
 .masonry-list li:focus .tile-primary-content img, .masonry-list li:hover .tile-primary-content img {
   -moz-transform: scale3d(1.2, 1.2, 0);
   -webkit-transform: scale3d(1.2, 1.2, 0);
@@ -31,6 +35,7 @@
   -webkit-transition: -webkit-transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
   transition: transform 15000ms cubic-bezier(0, 0, 0.8, 0.9);
 }
+/* line 26, ../sass/styles.scss */
 .masonry-list li:focus p,
 .masonry-list li:focus h2,
 .masonry-list li:focus .tile-secondary-content, .masonry-list li:hover p,
@@ -38,6 +43,7 @@
 .masonry-list li:hover .tile-secondary-content {
   opacity: 1;
 }
+/* line 33, ../sass/styles.scss */
 .masonry-list li a::after {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkY1ODk4MTY1MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkY1ODk4MTY2MDNBQTExRTNBN0U2RjUyQkFDMTgxQjI1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjU4OTgxNjMwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RjU4OTgxNjQwM0FBMTFFM0E3RTZGNTJCQUMxODFCMjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6XrhZfAAAAiUlEQVR42qzT0QmAIBQFUJP8aYh2ah0XaYZogtzGJfrsdQUpi6z3tAtXUfHgjw0RqRiNbqogOs4GnVBbgii8xKAznbHhdZKGoUMdXWOlSDWULgK0lED3DS7UJ+f+SeZAnwgHYiFfEBt5g0RIDhqlSA46EM38HSs6oO7psM1c6lEv/cVV+QXZBRgAnat44PE4W1oAAAAASUVORK5CYII=");
   bottom: 40px;
@@ -56,7 +62,8 @@
   -webkit-transition: all 150ms ease-out;
   transition: all 150ms ease-out;
 }
-.masonry-list li.tile-job:focus .tile-primary-content p, .masonry-list li.tile-job:hover .tile-primary-content p, .masonry-list li.tile-facebook:focus .tile-primary-content p, .masonry-list li.tile-facebook:hover .tile-primary-content p, .masonry-list li.tile-client:focus .tile-primary-content p, .masonry-list li.tile-client:hover .tile-primary-content p, .masonry-list li.tile-twitter:focus .tile-primary-content p, .masonry-list li.tile-twitter:hover .tile-primary-content p {
+/* line 53, ../sass/styles.scss */
+.masonry-list li.tile-01:focus .tile-primary-content p, .masonry-list li.tile-01:hover .tile-primary-content p, .masonry-list li.tile-02:focus .tile-primary-content p, .masonry-list li.tile-02:hover .tile-primary-content p, .masonry-list li.tile-03:focus .tile-primary-content p, .masonry-list li.tile-03:hover .tile-primary-content p, .masonry-list li.tile-04:focus .tile-primary-content p, .masonry-list li.tile-04:hover .tile-primary-content p {
   -moz-transform: translate3d(150%, 0, 0);
   -webkit-transform: translate3d(150%, 0, 0);
   transform: translate3d(150%, 0, 0);
@@ -65,7 +72,8 @@
   -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
   transition: transform 300ms cubic-bezier(0, 0, 0.4, 1);
 }
-.masonry-list li.tile-job:focus .tile-secondary-content p, .masonry-list li.tile-job:hover .tile-secondary-content p, .masonry-list li.tile-facebook:focus .tile-secondary-content p, .masonry-list li.tile-facebook:hover .tile-secondary-content p, .masonry-list li.tile-client:focus .tile-secondary-content p, .masonry-list li.tile-client:hover .tile-secondary-content p, .masonry-list li.tile-twitter:focus .tile-secondary-content p, .masonry-list li.tile-twitter:hover .tile-secondary-content p {
+/* line 57, ../sass/styles.scss */
+.masonry-list li.tile-01:focus .tile-secondary-content p, .masonry-list li.tile-01:hover .tile-secondary-content p, .masonry-list li.tile-02:focus .tile-secondary-content p, .masonry-list li.tile-02:hover .tile-secondary-content p, .masonry-list li.tile-03:focus .tile-secondary-content p, .masonry-list li.tile-03:hover .tile-secondary-content p, .masonry-list li.tile-04:focus .tile-secondary-content p, .masonry-list li.tile-04:hover .tile-secondary-content p {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -75,7 +83,8 @@
   -webkit-transition-delay: 150ms;
   transition: transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
 }
-.masonry-list li.tile-job .tile-primary-content p, .masonry-list li.tile-facebook .tile-primary-content p, .masonry-list li.tile-client .tile-primary-content p, .masonry-list li.tile-twitter .tile-primary-content p {
+/* line 62, ../sass/styles.scss */
+.masonry-list li.tile-01 .tile-primary-content p, .masonry-list li.tile-02 .tile-primary-content p, .masonry-list li.tile-03 .tile-primary-content p, .masonry-list li.tile-04 .tile-primary-content p {
   -moz-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -85,7 +94,8 @@
   -webkit-transition-delay: 150ms;
   transition: transform 300ms cubic-bezier(0, 0, 0.4, 1) 150ms;
 }
-.masonry-list li.tile-job .tile-secondary-content p, .masonry-list li.tile-facebook .tile-secondary-content p, .masonry-list li.tile-client .tile-secondary-content p, .masonry-list li.tile-twitter .tile-secondary-content p {
+/* line 66, ../sass/styles.scss */
+.masonry-list li.tile-01 .tile-secondary-content p, .masonry-list li.tile-02 .tile-secondary-content p, .masonry-list li.tile-03 .tile-secondary-content p, .masonry-list li.tile-04 .tile-secondary-content p {
   opacity: 1;
   -moz-transform: translate3d(-150%, 0, 0);
   -webkit-transform: translate3d(-150%, 0, 0);
@@ -95,18 +105,23 @@
   -webkit-transition: -webkit-transform 300ms cubic-bezier(0, 0, 0.4, 1);
   transition: transform 300ms cubic-bezier(0, 0, 0.4, 1);
 }
-.masonry-list li.tile-job .tile-primary-content {
+/* line 74, ../sass/styles.scss */
+.masonry-list li.tile-01 .tile-primary-content {
   background-color: #71964f;
 }
-.masonry-list li.tile-facebook .tile-primary-content {
+/* line 89, ../sass/styles.scss */
+.masonry-list li.tile-02 .tile-primary-content {
   background-color: #3b539b;
 }
-.masonry-list li.tile-twitter .tile-primary-content {
+/* line 104, ../sass/styles.scss */
+.masonry-list li.tile-03 .tile-primary-content {
   background-color: #00afe0;
 }
+/* line 114, ../sass/styles.scss */
 .masonry-list li.tile-case .tile-primary-content, .masonry-list li.tile-person .tile-primary-content {
   padding: 0;
 }
+/* line 117, ../sass/styles.scss */
 .masonry-list li.tile-case .tile-secondary-content, .masonry-list li.tile-person .tile-secondary-content {
   background-color: rgba(0, 0, 0, 0.7);
   -moz-transition: opacity 100ms ease-out;
@@ -114,37 +129,44 @@
   -webkit-transition: opacity 100ms ease-out;
   transition: opacity 100ms ease-out;
 }
-.masonry-list li.tile-client .tile-primary-content {
+/* line 143, ../sass/styles.scss */
+.masonry-list li.tile-04 .tile-primary-content {
   background-color: #604951;
   -moz-transition: background-color 250ms ease-out;
   -o-transition: background-color 250ms ease-out;
   -webkit-transition: background-color 250ms ease-out;
   transition: background-color 250ms ease-out;
 }
+/* line 149, ../sass/styles.scss */
 .masonry-list li.tile-person {
   text-align: center;
 }
+/* line 151, ../sass/styles.scss */
 .masonry-list li.tile-person .tile-secondary-content {
   display: table;
   height: 100%;
   padding: 0;
   width: 100%;
 }
+/* line 157, ../sass/styles.scss */
 .masonry-list li.tile-person .tile-secondary-container {
   display: table-cell;
   vertical-align: middle;
 }
+/* line 161, ../sass/styles.scss */
 .masonry-list li.tile-person .tile-secondary-container h2 {
   font-size: 24px;
   position: static;
 }
+/* line 165, ../sass/styles.scss */
 .masonry-list li.tile-person p {
-  color: #a18e5c;
+  color: #ffffff9c;
   font-family: 'Georgia', serif;
   font-size: 17px;
   margin: .2em;
   text-transform: none;
 }
+/* line 174, ../sass/styles.scss */
 .masonry-list a,
 .masonry-list button {
   color: white;
@@ -153,6 +175,7 @@
   position: relative;
   width: 100%;
 }
+/* line 182, ../sass/styles.scss */
 .masonry-list .tile-primary-content,
 .masonry-list .tile-secondary-content {
   bottom: 0;
@@ -163,9 +186,11 @@
   right: 0;
   top: 0;
 }
+/* line 192, ../sass/styles.scss */
 .masonry-list .tile-primary-content {
   background-color: #a49058;
 }
+/* line 194, ../sass/styles.scss */
 .masonry-list .tile-primary-content img {
   width: 100%;
   -moz-transform: scale3d(1, 1, 1);
@@ -176,6 +201,7 @@
   -webkit-transition: -webkit-transform 200ms ease-out;
   transition: transform 200ms ease-out;
 }
+/* line 200, ../sass/styles.scss */
 .masonry-list .tile-secondary-content {
   opacity: 0;
   -moz-transition: opacity 250ms ease-out;
@@ -183,6 +209,7 @@
   -webkit-transition: opacity 250ms ease-out;
   transition: opacity 250ms ease-out;
 }
+/* line 203, ../sass/styles.scss */
 .masonry-list .tile-secondary-content p,
 .masonry-list .tile-secondary-content h2 {
   opacity: 0;
@@ -192,15 +219,18 @@
   -webkit-transition-delay: 100ms;
   transition: opacity 200ms ease-in 100ms;
 }
+/* line 209, ../sass/styles.scss */
 .masonry-list p,
 .masonry-list h2 {
   text-transform: uppercase;
 }
+/* line 213, ../sass/styles.scss */
 .masonry-list h2 {
   font-size: 12px;
   margin: 0;
   position: absolute;
 }
+/* line 218, ../sass/styles.scss */
 .masonry-list p {
   font-size: 28px;
   font-weight: 300;
@@ -208,6 +238,7 @@
   margin: 1em 0 0;
 }
 
+/* line 230, ../sass/styles.scss */
 *,
 *:before,
 *:after {
@@ -216,15 +247,18 @@
   box-sizing: border-box;
 }
 
+/* line 238, ../sass/styles.scss */
 * {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 242, ../sass/styles.scss */
 body {
   background-color: #242424;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* line 247, ../sass/styles.scss */
 ul {
   list-style: none;
   margin: 0;
