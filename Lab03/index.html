@@ -2,12 +2,78 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./css/styles.css"></link>
+        <link rel="stylesheet" href="./css/button.css"></link>
         <title>Heatmaps</title>
     </head>
     <body>
-        <div id="wrapper"></div>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="./js/d3.js"></script>
+
+
+
+        <div class="header">
+        
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <h1>HeatMaps</h1>
+            <p class="inner-p">
+                I choose the dataset provided by WashingtonPost and download the part of Adams County in Ohio.
+                Then I filter the original dataset and group them as reporter-buyer pairs. 
+                In this way we can learn buyers in Adams get their pills from which state.
+                I draw two Heatmaps for each perspective and discribe the advantages or disadvanges for each one. <br/>
+            </p>
+            <div id="wrapper"></div>
+        </div>
+
+        <div class="buttons">
+            <button class="button type1" id = "allBlack"> P2 - VIS1 </button>
+            <button class="button type2" id = "interpolateSinebow"> P2 - VIS2 </button>
+            <button class="button type3" id = "interpolateGreens"> P1 - VIS1 </button>
+            <button class="button type4" id = "interpolateYlOrRd"> P1 - VIS2 </button>
+            <!-- <button class="button type1" id = "interpolateSpectral"> interpolateSpectral </button> -->
+            <!-- <button class="button type1" id = "myColor"> myColor</button> -->
+        </div>
+        
+        <!--Waves Container https://codepen.io/goodkatz/pen/LYPGxQz-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+        <p>CSE5544 | Project03<br/><br/>Shiwen Han</p>
+        </div>
+        <!--Content ends-->
+
+
+
+
+
+
+
+        <!-- <div id="main">
+            <button type="button" onclick="changeColor('blue')">Blue</button>
+            <button type="button" onclick="changeColor('red')">Red</button>
+        </div> -->
+        
+        <!-- <div id="wrapper"></div> -->
+
     </body>
 </html>
 
