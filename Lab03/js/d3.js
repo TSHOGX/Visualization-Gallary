@@ -121,7 +121,7 @@ async function main() {
         const text = d3.select("p")
         .text(function(d) { return "Drag dealing in USA" })
         .append("p")
-        .text(function(d) { return "This is a very bad vis. I remove all the labels, set the color to all black and give it a misleading title." })
+        .text(function(d) { return "This is a very bad visualization. I remove all the labels, set the color to all black, and gave it a misleading title." })
         .classed('legend_values', true);
 
         svg.selectAll("text").remove();
@@ -150,7 +150,7 @@ async function main() {
         const text = d3.select("p")
         .text(function(d) { return "Drag dealing in OH" })
         .append("p")
-        .text(function(d) { return "It is better then first one, but I choose the missleading color and set the wrong value range. So people can not see directly which cell has bigger number and number 7000 has almost same color as 700." })
+        .text(function(d) { return "It is better than the first one, but I choose the misleading color and set the wrong value range for this color set. So people can not see directly which cell has a bigger number and the cell with the number 7000 has the almost same color as the cell with the number 700." })
         .append("p")
         .text(function(d) { return "x: buyer city" })
         .append("p")

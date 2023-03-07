@@ -140,7 +140,7 @@ async function main() {
     function drawPointsOnImgAllExperts(imgID) {
         const focusData = dataset.filter(function(d){return (d.image_id == "C"+imgID)})
         const scaleSize = 3.5*32
-        const marginSize = 50
+        const marginSize = 0
         const imgW = parseInt(focusData[0]["imgW"])/scaleSize
         const imgH = focusData[0]["imgH"]/scaleSize
         // console.log(focusData)
@@ -851,7 +851,7 @@ async function main() {
     }
 
     const imgIDs = [];
-    for (var i=1; i<5; i++) {
+    for (var i=1; i<2; i++) {
         imgIDs.push(i);
     }
 

@@ -110,7 +110,7 @@ async function drawBars() {
       .attr('y', d => yScale(yAccessor(d)) - 5)
       .text(yAccessor)
       .style('text-anchor', 'middle')
-      .attr('fill', '#8EA7E9')
+      .attr('fill', '#7286D3')  // 8EA7E9
       .style('font-size', '15px')
       .style('font-family', 'sans-serif')
 
@@ -145,7 +145,7 @@ async function drawBars() {
       .append('text')
       .attr('x', dimensions.boundedWidth / 2)
       .attr('y', dimensions.margin.bottom - 10)
-      .attr('fill', '#34495e')
+      .attr('fill', '#7286D3')  // 34495e for white background, change in css actualy
       .style('font-size', '15px')
       .text("Income share held by highest 10% (2019)")
       .style("text-transform", "capitalize")
