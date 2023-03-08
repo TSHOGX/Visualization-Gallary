@@ -84,6 +84,42 @@ async function drawMap() {
     .attr('class', 'graticule')
     .attr('d', pathGenerator(graticuleJson))
 
+  // Mouse events
+  var Tooltip = d3.select("#wrapper")
+  .append("div")
+  .style('position','absolute')  // important
+  .style("opacity", 0)
+  // .attr("class", "tooltip")  // just make a arrow if it is tooltip
+  .style("background-color", "white")
+  .style("border", "solid")
+  .style("border-width", "2px")
+  .style("border-radius", "5px")
+  .style("padding", "5px")
+
+  function handleMouseover(e, d) {
+    Tooltip
+      .style("opacity", 0.7)
+    d3.select(this)
+    .attr("fill", "#727d91")
+  }
+
+  function handleMousemove(e, d) {
+    Tooltip
+          .html("Country: " + d.properties.NAME + "<br>Value: " + metricDataByCountry[countryIdAccessor(d)])
+          .style("left", (event.offsetX+20) + "px")
+          .style("top", (event.offsetY) + "px")
+  }
+
+  function handleMouseout(d, i) {
+    Tooltip
+          .style("opacity", 0)
+    d3.select(this).attr("fill", d => {
+      const metricValue = metricDataByCountry[countryIdAccessor(d)]
+      if (typeof metricValue === undefined) return '#e2e6e9'
+      return colorScale(metricValue) 
+    })
+  }
+  
   // Draw our countries
   const countries = bounds
     .selectAll('.country')
@@ -97,6 +133,9 @@ async function drawMap() {
       if (typeof metricValue === undefined) return '#e2e6e9'
       return colorScale(metricValue) 
     })
+    .on('mouseover', handleMouseover)
+    .on('mousemove', handleMousemove)
+    .on('mouseout', handleMouseout);
 
   // Map legend
   const legendGroup = wrapper

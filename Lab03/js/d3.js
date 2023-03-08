@@ -78,24 +78,25 @@ async function main() {
     // create a tooltip
     const tooltip = d3.select("#wrapper")
         .append("div")
+        .style('position','absolute')  // important
         .style("opacity", 0)
         .attr("class", "tooltip")
-        // .style("background-color", "white")
-        .style("border", "solid")
+        .style("background-color", "#333333")
+        // .style("border", "solid")
         .style("border-width", "2px")
         .style("border-radius", "5px")
         .style("padding", "5px")
 
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function(event,d) {
-        tooltip.style("opacity", 1)
+        tooltip.style("opacity", 0.7)
     }
     const mousemove = function(event,d) {
     tooltip
         // .html("The exact value of<br>this cell is: " + d.value)
         .html("The value of this cell is: " + d.num)
-        .style("left", (event.x)/2 + "px")
-        .style("top", (event.y)/2 + "px")
+        .style("left", event.x + 20 + "px")
+        .style("top", event.y + "px")
     }
     const mouseleave = function(d) {
         tooltip.style("opacity", 0)
