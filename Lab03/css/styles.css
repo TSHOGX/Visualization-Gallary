@@ -19,6 +19,13 @@ p {
   color: #333333;
   /* margin: 1em; */
 }
+a {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #ffffff;
+  word-wrap:break-word;
+}
 
 .content .bottom-button {
   font-family: 'Lato', sans-serif;

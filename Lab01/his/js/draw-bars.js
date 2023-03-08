@@ -6,11 +6,11 @@ async function drawBars() {
   let dimensions = {
     width: width,
     height: width * 0.9,
-    margin: {
+    margin: {  // 30 10 50 50
       top: 30,
-      right: 10,
+      right: 0,
       bottom: 50,
-      left: 50,
+      left: 0,
     },
   }
   dimensions.boundedWidth =
