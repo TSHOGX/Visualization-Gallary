@@ -61,7 +61,7 @@ async function main() {
 
     // svg
     const margin = {top: 30, right: 30, bottom: 30, left: 30},
-        width = 1500 - margin.left - margin.right,
+        width = 950 - margin.left - margin.right,
         height = 550 - margin.top - margin.bottom;
 
     const svg = d3.select("#wrapper")
