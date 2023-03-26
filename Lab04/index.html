@@ -2,14 +2,74 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./css/styles.css"></link>
-        <title>Map</title>
+        <link rel="stylesheet" href="./css/button.css"></link>
+        <title>Pixel Bar</title>
     </head>
     <body>
-        <div id="wrapper" class="wrapper"></div>
-        <p>
-            <a href="../Lab01.pdf">Instruction</a> <a href="../Lab01_report.html">Report</a> <a href="javascript:history.back()">Go Back</a>
-        </p>
+
+        <div class="header">
+
+
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <!-- <button class="inner-button" onClick="window.location.reload()">HeatMaps</button> -->
+            <!-- <h1>HeatMaps</h1> -->
+            <!-- <p class="inner-p">
+                <a href="./src/Lab04.pdf">Instruction</a> <a href="../Lab01_report.html">Report</a> <a href="javascript:history.back()">Go Back</a>
+            </p> -->
+            <div id="wrapper" class="wrapper"></div>
+        </div>
+
+
+
+        <div class="buttons">
+            <button class="button type2" id = "TI"> TI </button>
+            <button class="button type4" id = "RL"> RL </button>
+            <button class="button type2" id = "HS"> HS </button>
+            <button class="button type4" id = "PI"> PI </button>
+            <button class="button type2" id = "JC"> JC </button>
+            <button class="button type4" id = "TM"> TM </button>
+            <button class="button type2" id = "MS"> MS </button>
+        </div>
+
+
+        <!--Waves Container https://codepen.io/goodkatz/pen/LYPGxQz-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+
+        </div>
+        <!--Header ends-->
+
+
+        <!--Content starts-->
+        <div class="content flex">
+            <!-- <button class="bottom-button" onclick="history.back()">CSE5544 | Project03<br/><br/>Shiwen Han</button> -->
+            <p>
+                <a class="bottom-a" href="./src/Lab04.pdf">Instruction</a>|<a class="bottom-a" href="./src/Lab04_report.html">Report</a>|<a class="bottom-a" href="https://vis.tshogx.online/">Go Back</a>
+                <br/><br/>
+                <!-- CSE5544 | Project03
+                <br/><br/> -->
+                Shiwen Han
+            </p>
+        </div>
+        <!--Content ends-->
+
         <script src="https://d3js.org/d3.v7.min.js"></script>
-        <script src="./js/draw-map.js"></script>
+        <script src="./js/d3.js"></script>
+
     </body>
 </html>
