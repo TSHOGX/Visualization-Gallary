@@ -169,7 +169,7 @@ async function main() {
     })
     console.log(dataDraw)
 
-    const colorBox = ['#FF1E00', '#5D9C59']  // red, green
+    const colorBox = ['#D51E24', '#282347']  // red, green D51E24 282347 1f2158
     svg.selectAll()
         .data(dataDraw)
         .enter()
